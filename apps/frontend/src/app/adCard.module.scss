@@ -1,0 +1,96 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px; 
+}
+
+.imageCarousel {
+  position: relative;
+ height: 250px;
+  overflow: hidden;
+    width: 100%;
+}
+
+.carouselButton {
+   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: rgba(232, 232, 232, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+.carouselButton:hover {
+  background-color: white
+}
+
+.carouselButton:first-child {
+  left: 10px; 
+}
+
+.carouselButton:last-child {
+  right: 10px; 
+}
+
+.image {
+   width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+  display: block;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 10px;
+}
+.contentRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+   font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price {
+  margin-left: 20px;
+    white-space: nowrap;
+}
+.likeButton {
+  padding: 0; 
+  margin-left: 20px;
+  border: none; 
+  background: none;
+  cursor: pointer;
+  font-size: 24px;
+  outline: none;
+  transition: color 0.3s; 
+}
+
+.likeButton:hover {
+  color: red; 
+}

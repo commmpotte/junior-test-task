@@ -1,0 +1,103 @@
+.adsListContainer {
+     display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+.centered {
+  display: flex;
+   flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+.header{
+    font-size: 18px;
+  font-weight: bold;
+}
+.filtersButton {
+ background-color: #546eff; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+.filtersContainer {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-column-gap: 20px; 
+    grid-row-gap: 10px; 
+}
+
+.inputContainer input {
+border: 1px solid #ccc; 
+border-radius: 5px;
+  outline: none;  width: 100%;  padding: 10px; 
+}
+
+
+.searchInput {
+  grid-column: 1 / span 2; }
+
+.buttonContainer {
+  display: flex;
+  justify-content:center;
+gap:20px;
+ grid-column: 1 / span 2;
+}
+
+.applyButton {
+  background-color: #4caf50; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer; 
+}
+
+.resetButton {
+  background-color: #f44336; 
+  color: white; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+
+.adCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+   justify-content: center;
+   margin: 0 auto; 
+    max-width: 1220px; 
+}
+.adCard {
+    display: flex;
+  flex-direction: column;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px; 
+}
+
+@media screen and (max-width: 768px) {
+  .adCard {
+margin:0;
+  }
+   .adCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto; 
+  }
+  .adCardsContainer {
+    width: 100%;
+}
+.centered {margin: 10px;}
+}
